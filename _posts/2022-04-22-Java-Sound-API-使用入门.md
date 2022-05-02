@@ -1,13 +1,15 @@
 ---
-layout: posts
-title:  "Java Sound API 使用入门"
-date:   2022-04-22 08:00:00 +0800
-tags:   Java JavaSoundAPI
-categories: Java
-toc:    true
+title      : "Java Sound API 使用入门"
+date       : 2022-04-22 08:00:00 +0800
+categories : Java
+tags       : 
+  - Java
+  - JavaSoundAPI
+toc        : true
 ---
 
-Java Sound API 官方地址：[JAVA Sound Guide](https://docs.oracle.com/javase/8/docs/technotes/guides/sound/programmer_guide/contents.html)  [JavaDoc](https://docs.oracle.com/javase/8/docs/api/index.html?javax/sound/sampled/Clip.html)
+JavaSoundAPI 官方地址：[JAVA Sound Guide](https://docs.oracle.com/javase/8/docs/technotes/guides/sound/programmer_guide/contents.html)  [JavaDoc](https://docs.oracle.com/javase/8/docs/api/index.html?javax/sound/sampled/Clip.html)
+{: .notice--info}
 
 ## 概要
 
@@ -15,14 +17,13 @@ Java Sound API 官方地址：[JAVA Sound Guide](https://docs.oracle.com/javase/
 
 `Java Sound API` 包括对数字音频和 MIDI 数据的支持。这两个主要的功能模块在单独的包中提供：
 
--   `javax.sound.sampled` 此包指定了用于捕获、混合和播放数字（采样）音频的接口。
--   `javax.sound.midi` 这个包提供了 MIDI 合成、排序和事件传输的接口。
-
+- `javax.sound.sampled` 此包指定了用于捕获、混合和播放数字（采样）音频的接口。
+- `javax.sound.midi` 这个包提供了 MIDI 合成、排序和事件传输的接口。
 
 另外两个包允许服务提供者（与应用程序开发者相反）创建自定义软件组件，以扩展 `Java Sound API` 实现的功能：
 
--   `javax.sound.sampled.spi`
--   `javax.sound.midi.spi`
+- `javax.sound.sampled.spi`
+- `javax.sound.midi.spi`
 
 ![Java sound class-diagram](http://plantuml.mickey.wang:8665/plantuml/svg/nHjhS-EuxRj-XMRsYpBd-1TajkVOogrRlyQFR6zkRZAAH2UwbILLbDBujjlVNZv4yI6Iakoq_R0R4GH040190AH_XcLGbDKfSVyQl0KkpAeqSiCaWF0sYeEN8ZWvfEN-WRhVnwH_38DJde1el8XJS4XHHvm4pmdmtqEGbt6Mkj-Tdzoxksa1WX9y_koQyBoRddYxieZJbnldXnEd9IYEGGYq0csoeaI3_x38Z576y_IO4I6_e-cNSVZ39P3bVBfTRxwiLtwhQp5V-K_pLGi-NIyta-d-QJRVJLkTkuq_-Pk_RS6_-9EPPPZrOU_SkdJERXgS06ezPra2WjIDuIwhYX38YiEqtXJF-UuldqUKSbIJO1tNl5v0kKBiYDfLXXBm59JXAu0UDWXHbjW9_b452VJMpt-0iCGTo2RkQm1Vfrb4sTJ3bHdzyB3XWcTO5a5OkcRJm3mUJweepXxY16n148626edH_cXw7x82oOWdf82yUPfN9HeN1AUReRI7xM8m3VxK40bYD5G2h4FCBcgze5rKLDIkDKJTOHQK0RO-CS1R5aTkbeFKexCdCnyXDZUcJkOM_opY4dZFvnByzZice4IzlO4ocsRf6oWWsWWsHVOMczo2u8xzDCmYv7I__OvrG2V3OD2xwKct3mhqlqodhXZMkwlo76qg8F9q_6HAcMytvIMoAcRWWtCzsWSUAHoqGeXZKmZinQotE1rIT3cxMPRhbbvBGebTr-AQ9d4k7pnubIpMwytJTBtQprU7zM6t-DMuvjILrC9J9eUvOmEXSnmiGFfIlX9NJZ9w6YpZiCWW2BCq4de9IrXJRJ8OapDO70zAf0qAPYlYBB8itsI847ggn0dgylfl1jFib6C0yfcoo1Aambkt_aQE6D8lw7mI3qM5njkVSp1gYB0ad0FM1JWzWw86GUCvrbl6CHuF2Ih9X652D6CFhVmta9PageHLYVv3tyHsUQtoTln4YCZ1FI8JPZOXcpcQ9lvB9aTuuYMCHHATGZRxS3qqKZ0DoB6CuFkaVxtnLotWTB7U-IteRZ_PxZNGzSQYvMi35_D43oba6rSJ5HXZO2ko6WZRaRd_z5evVCLmDr8M2byWMiyOkWua_vUj__-m4r7XxWnBS6hllQlr_Wd5wTFvmzoV8M45yGGw6ZWmkcNy3WeI5zTR1swJ6BoDrlHxd4h2Qc9iCMB1GC9GYi1DDFGKxg3X1o_kvqUkUOHckz2ZaBCCeU2_dhd7C6qbp6ncpY1g67CHuSWmE5MOo4E660SVGcWQ_A98JeuAhs9by8gBeqD9c8yBopHpl3Jc73xR3vjadxaDocS7aB8iSG19ayqEcgzLnhwvx20YlPny8kJmeUxIz60Gz0p-m11KRv0vNZQarGM6Yc1tA9vpgsWZBRDrLNuC8sgGM_40WMLpzh6y7QjVWsDAymteIese2-ihdeQArPpDCt0CggG-eZ7jI3ZjL8Ac_b1NqY86gAEO4MQW7uUWqr5gN8cZRLGzUPUiHB5n0SNeepqQhnBUwdnoakT5bXSn2eW4DXtaakan5WPuFL1QscDet258aRD7k2TiSse2XLqRvz4quqK0ORjsZ-HFZNNaQJE2V44Hw3B8xshzq_3qiuiL18eo1ahwgMwjP9dWD5XJG-iYkvvar9PS6-hN1OFxHZy4AcgeMQ-UfS1WrHF1eE3QkBZZB6G25yJtoeOa1_e4ydNos4uf9uSsQFxme0DEsvddQjOgrDSjy5w25BOoT27Z6NrCuYCMztqsw92AkxonVPTATAIFdqTAGDiKpZho8HbFdn1r5SwKmFkwgZIoHdHPKTfFgvEOKLDJeLc_1Kc5TW06eMrvGn1ewH9bn2DkS5OvUyJaWYFmrK9xE8ngd43f4SUjHu3SUfpRiEKbo6rQMbl_qT_UMqjTFPJxa6Ga2cYqUyG0znIdyQawyNRmBhNp0eGnMMfqrwxo24cm0KMSHNn1LcbSGjv4J1V1CqW4IF2kGkA8GUX86gEACbEh4bJfV-nYz4jQ-IDb7xYQRzk1I2y6K_abzsb0IwfF1KYLhcmm1wn41RQiDTa2HrfmhMLvj0qpeNYc70Gx2dNfr_XOUeeQXZkrg5-JLoydkxs_VVfbCbzfpes_F-ryjF_hEhR-_h1T6LQ9dgpkCr0-hXU7PVlmsapQgFUJnMGrrTHE9ylDmd_QJlQ-TPtQj-7s1XmLGPnoynoJ2egt2FXrWTZCSkKkRLkbAJl9XBWpBECtq2_skA-EHtHAnN_o2APvGj2AKQIwDgjuBz1VSw_kfaFotWLu8mvjypUcEFRqu5QfQz2u4zPR6DgT-AmOB7WNO9RhVucnU5NKXs88hc8TUXAnkeniJmhLbbe42ot5QOkcMufpxtwfS4duo7A5Jowh8hcW_a0mQcjAiKLgGI0i6WLWeURfFJvVA3Xy3T8K9An9qWXYDSQ8G6e-R2RFyOkVHd6GzaerD0a0NHXD3OoV4UmVXGZFGgvaOSWf35nbPeo584sZTw5mAI-qNQD_qJbsYX74lcbjYTO-q3XIm_o1sKHntNjcbuz8R5ItLTR1nOxRb3xbOwo1RgRBfztybvK_CtOVLXq83ulrPA_jFImcNxKT4zoXNlz98N5jvl_-9T0MRTB5i_PEYkwl82YIynOS4pGUsk9d80dEJUIdTCvJacYLvvesGTCnaSfzAcK4mk2yZzMRCIujonRvwfE-3A-xQbVtDNEIlTutJ4paicZFJZa0zLCKUSpOFBt_oLEoUpg0c4mmJWNAYP2V0YNOFo91v0ucf2RgbzdJ-9pjQBQetaBN3jw53YQA5C1pitEnlVQZlvxhGnRD618VzfeQocQp-FMfHmveZotn4OuBVY2jwn147JIRyvf71TryQ9K1Co2nLgiUORzmrM0erwlTFAHWPC1TRQyhMlFDB0-MC1YsoLHXeIVtSDcW4BEVq_2ro59yO5BKbijMQHj9UJ7Nz0UbTEUcShIvAAyNQRRmkeLS9CeAteu038kOl9iGaSWrW-ohn1pM1Fs2VKlSapdeaGYf06TSqXPw0MrFSRgN5LaDFFrGlPaNovfMcA2KHuc4rWn3UZSblPYIBbWnc5jQt5a49WAB5WgH98WYSMVmn4Q3L81JzWOiU5qFbhXRaKp7JH2CV5bo8JAB-flfbBIr6SeLoObu6uf55DkG_46khBd5-4HpMF4QevsHS1IKtRBtPQUW-9QJ9YsJkZbAw--3y1jDm-hWXG4HRuw9IJSwRB43KxGp1SETifIVilTiDbgvM6ml8aYlteGRZAPEh2aQM-l8DKluBSwR1v7jceIoo4WJAqXwPba050mepbHyuqjgcEieDNJPgVwjFct12m11nSFSHAxHT-U4RUgzuA6uSjbh_zc0_N70HMy2XW-bkyR_cBS0ZInNFmQuc1FxfK67Ssv0SOeXrBoMLBg5_B0JQSJZJSV1Gu-J87qPyuUPT_-wlHtqSoR7UAmQMU5V6Jd6NoZzD1xRVvlas8yfwx1c1itQDjBBB-akP89V_JcsfwXcIla5jTFd9RX9bxhNs4xdSzM-ed5suwgCap59JUhAZzM_2A9ZV_5jcfByi7gORrjV55kjPLPmXsBLTnWcHheTv4BNam-YovnGkEvqkgw0JLDIhqolSBmXhCnSnEikf_FkrJIjrgNP5VFgnyjkxduRbMasqfNCfJjkDnCnzBGl0RcIUvcXvJAEqwCsPf99Kn2wmjmcRiBssTH-h1iemxh0NKZzm36NZ4oQu7K7OS-TL6KsnU4i3XNi8fj5jUtqme1nDXQZTUDWQd3czCeehKxPAt-uJieklX245Oezp-Fx0CQX43FQH-28piyWZQfJyXy0 "Java sound class-diagram")
 
@@ -42,14 +43,13 @@ _Package `javax.sound` class-diagram:_
 
 在 `Java Sound API` 中，数据格式由一个`AudioFormat`对象表示，该对象包括以下属性：
 
--   编码技术，通常是脉冲编码调制 (`PCM`)
--   通道数（单声道 1 个，立体声 2 个等）
--   采样率（每秒采样数，每个通道）
--   每个样本的位数（每个通道）
--   帧率
--   帧大小（以字节为单位）
--   字节顺序（大端或小端）
-
+- 编码技术，通常是脉冲编码调制 (`PCM`)
+- 通道数（单声道 1 个，立体声 2 个等）
+- 采样率（每秒采样数，每个通道）
+- 每个样本的位数（每个通道）
+- 帧率
+- 帧大小（以字节为单位）
+- 字节顺序（大端或小端）
 
 `PCM` 是声音波形的一种编码。`Java Sound API` 包括两种使用线性量化幅度的 `PCM` 编码，以及`有符号`或`无符号` `整数值`。线性量化意味着存储在每个样本中的数字与该瞬间的原始声压成正比（任何失真除外），并且与该瞬间随着声音振动的扬声器或耳膜的位移成正比。例如，光盘使用`线性 PCM 编码`的声音。`Mu-law` 编码和 `a-law` 编码是常见的`非线性编码`，可提供更压缩的音频数据版本；这些编码通常用于电话或语音录音。非线性编码使用非线性函数将原始声音的振幅映射到存储的值。
 
@@ -367,10 +367,9 @@ public class AudioExample {
 }
 ```
 
-## 备注
-
-1.  直接音频混音器始终是 Windows 上的默认设置。如果启用了 Solaris 音频混音器，它们是 Solaris 上的默认设置（请参阅混音器的 Solaris 手册页）。在 Linux 上，只有当有支持混合的设备时，它们才是默认设置。
-2.  因为它们是“直接的”，所以直接音频混音器不支持`SAMPLE_RATE`控制。
-3.  可以通过 `sound.properties`文件选择默认混音器。
-
----
+<div class="notice--info">
+  <h3>备注</h3>
+  <p>1. 直接音频混音器始终是 Windows 上的默认设置。如果启用了 Solaris 音频混音器，它们是 Solaris 上的默认设置（请参阅混音器的 Solaris 手册页）。在 Linux 上，只有当有支持混合的设备时，它们才是默认设置。
+1. 因为它们是“直接的”，所以直接音频混音器不支持`SAMPLE_RATE`控制。
+2. 可以通过 `sound.properties`文件选择默认混音器。</p>
+</div>

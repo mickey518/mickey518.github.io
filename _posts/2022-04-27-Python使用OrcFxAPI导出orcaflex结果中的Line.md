@@ -1,9 +1,9 @@
 ---
-layout: posts
-title:  "Python使用OrcFxAPI导出orcaflex结果中的Line!"
-date:   2022-04-27 14:07:51 +0800
-tags: Python orcaflex OrcFxAPI
-categories: Python orcaflex OrcFxAPI
+title      : Python 使用 OrcFxAPI 导出 orcaflex 结果中的 Line
+date       : 2022-04-27 14:07:51 +0800
+tags       : Python orcaflex OrcFxAPI
+categories : Python
+classes    : wide
 ---
 
 **OrcFxAPI需要OrcaFlex正版授权**
@@ -26,7 +26,7 @@ pip install pandas -i https://mirrors.aliyun.com/pypi/simple
 
 ## 安装OrcFxAPI Python接口
 
-1. 进入到 `%你的OrcaFlex安装目录%\OrcFxAPI\Python`目录下
+1. 进入到 `%替换你的OrcaFlex安装目录%\OrcFxAPI\Python`目录下
 2. 双击运行 `InstallPythonInterface.bat` 文件
 
 ## 导出脚本
@@ -66,5 +66,3 @@ for variableName in variableNameList:
   # index参数设置为False表示不保存行索引,header设置为False表示不保存列索引
   data.to_csv(csvName, index=False, header=False)
 ```
-
----
