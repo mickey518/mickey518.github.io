@@ -6,6 +6,8 @@ main      :
     url   : about
   - title : "Demo"
     url   : demo
+  - title : 🎵🎵🎵
+    url   : music
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"

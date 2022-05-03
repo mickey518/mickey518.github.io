@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "zh-CN"
-title                    : "Mickey's Blogs"
+title                    : "Mickey's Blogs👨‍💻"
 title_separator          : "-"
-subtitle                 : "Welcome 欢迎━(*｀∀´*)ノ亻! 👏🏻👏🏻👏🏻" # site tagline that appears below site title in masthead
+subtitle                 : "Welcome 欢迎━(*｀∀´*)ノ亻! 👏🏻👏🏻👏🏻 🤘🤘🤘‍" # site tagline that appears below site title in masthead
 name                     : "Mickey Wang"
 description              : "An amazing website."
 url                      : "https://www.mickey.wang" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -105,7 +105,7 @@ author:
   name             : "Mickey Wang"
   avatar           : "/assets/images/avatar-2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **amazing** Java Developer.☕️"
-  location         : "ShangHai"
+  location         : "ShangHai🏢"
   email            : "mickey.wang.live@outlook.com"
   links:
     - label: "Email"
