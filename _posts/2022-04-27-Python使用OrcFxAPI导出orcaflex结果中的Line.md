@@ -1,8 +1,8 @@
 ---
 title      : Python 使用 OrcFxAPI 导出 orcaflex 结果中的 Line
-date       : 2022-04-27 14:07:51 +0800
-tags       : Python orcaflex OrcFxAPI
+date       : 2022-04-27 08:00:00 +0800
 categories : Python
+tags       : Python orcaflex OrcFxAPI
 classes    : wide
 ---
 
@@ -66,3 +66,13 @@ for variableName in variableNameList:
   # index参数设置为False表示不保存行索引,header设置为False表示不保存列索引
   data.to_csv(csvName, index=False, header=False)
 ```
+
+---
+
+[[Python]]
+
+[[OrcFxAPI]]
+
+[[OrcaFlex]]
+
+---

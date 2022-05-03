@@ -1,0 +1,14 @@
+{
+  "legacyEditor": false,
+  "livePreview": true,
+  "showFrontmatter": true,
+  "strictLineBreaks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "_posts",
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "figures",
+  "promptDelete": false,
+  "showLineNumber": true,
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true
+}

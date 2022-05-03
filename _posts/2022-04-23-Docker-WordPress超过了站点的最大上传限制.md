@@ -1,8 +1,8 @@
 ---
-title      : "Docker WordPress超过了站点的最大上传限制"
+title      : Docker WordPress超过了站点的最大上传限制
 date       : 2022-04-23 08:00:00 +0800
-tags       : Docker WordPress
 categories : Docker
+tags       : Docker WordPress
 toc        : true
 ---
 
@@ -54,5 +54,11 @@ memory_limit = 500M
 ```bash
 docker restart wordpress
 ```
+
+---
+
+[[Docker]]
+
+[[WordPress]]
 
 ---

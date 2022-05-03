@@ -1,10 +1,8 @@
 ---
-title      : "Java Sound API 使用入门"
+title      : JavaSoundAPI 使用入门
 date       : 2022-04-22 08:00:00 +0800
 categories : Java
-tags       : 
-  - Java
-  - JavaSoundAPI
+tags       : Java JavaSoundAPI
 toc        : true
 ---
 
@@ -373,3 +371,11 @@ public class AudioExample {
 1. 因为它们是“直接的”，所以直接音频混音器不支持`SAMPLE_RATE`控制。
 2. 可以通过 `sound.properties`文件选择默认混音器。</p>
 </div>
+
+---
+
+[[Java]]
+
+[[JavaSoundAPI]]
+
+---
