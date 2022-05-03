@@ -11,14 +11,16 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-remote_theme             : "mmistakes/minimal-mistakes"
+# remote_theme             : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+github                   : "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"
 
 # Site Settings
 locale                   : "zh-CN"
 title                    : "Mickey's Blogs👨‍💻"
 title_separator          : "-"
-subtitle                 : "Welcome 欢迎━(*｀∀´*)ノ亻! 👏🏻👏🏻👏🏻 🤘🤘🤘‍" # site tagline that appears below site title in masthead
+subtitle                 : "Welcome 欢迎━(*｀∀´*)ノ亻! 👏🏻👏🏻👏🏻 :metal::metal::metal:" # site tagline that appears below site title in masthead
 name                     : "Mickey Wang"
 description              : "An amazing website."
 url                      : "https://www.mickey.wang" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -104,8 +106,8 @@ analytics:
 author:
   name             : "Mickey Wang"
   avatar           : "/assets/images/avatar-2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** Java Developer.☕️"
-  location         : "ShangHai🏢"
+  bio              : "I am an **amazing** Java Developer. :coffee:"
+  location         : "ShangHai :office:"
   email            : "mickey.wang.live@outlook.com"
   links:
     - label: "Email"
@@ -227,6 +229,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jemoji
 
 # mimic GitHub Pages with --safe
 whitelist:

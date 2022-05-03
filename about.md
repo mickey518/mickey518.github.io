@@ -10,5 +10,9 @@ header           :
   actions        :
     - label      : "Home"
       url        : "https://www.mickey.wang/"
-excerpt          : An Java Developer.🇨🇳
+excerpt          : "An Java Developer. :cn:"
 ---
+
+## jemoji
+
+I give this plugin two :+1:!
