@@ -4,16 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "d0af3594ba9a5bb8",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "_posts/2022-09-05-WSL-导入备份包，到其他目录.md",
-            "mode": "source",
-            "source": false
+        "id": "7d0accca7a04de79",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6c6657972b36dd2a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2022-11-02-docker-compose-部署gitlab.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        }
+        ]
       }
     ],
     "direction": "vertical"
@@ -31,7 +37,9 @@
             "type": "leaf",
             "state": {
               "type": "file-explorer",
-              "state": {}
+              "state": {
+                "sortOrder": "alphabetical"
+              }
             }
           },
           {
@@ -77,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-09-05-WSL-导入备份包，到其他目录.md",
+                "file": "_posts/2022-11-02-docker-compose-部署gitlab.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-09-05-WSL-导入备份包，到其他目录.md",
+                "file": "_posts/2022-11-02-docker-compose-部署gitlab.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -117,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-09-05-WSL-导入备份包，到其他目录.md"
+                "file": "_posts/2022-11-02-docker-compose-部署gitlab.md"
               }
             }
           }
@@ -128,17 +136,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d0af3594ba9a5bb8",
+  "active": "6c6657972b36dd2a",
   "lastOpenFiles": [
-    "_posts/2022-04-29-HDF5-简介.md",
     "_posts/2022-04-30-HDF5-安装.md",
+    "_posts/2022-11-02-docker-compose-部署gitlab.md",
     "_posts/2022-05-01-Java-科学计算库.md",
+    "_posts/2022-09-05-WSL-导入备份包，到其他目录.md",
+    "_posts/2022-04-29-HDF5-简介.md",
     "_posts/2022-04-28-Maven-使用插件安装本地jar包.md",
     "_posts/2022-04-27-Python使用OrcFxAPI导出orcaflex结果中的Line.md",
     "_posts/2022-04-25-Nginx-配置记录.md",
     "_posts/2022-04-24-ECCN.md",
-    "_posts/2022-04-23-Docker-WordPress超过了站点的最大上传限制.md",
-    "_posts/2022-04-22-Java-Sound-API-使用入门.md",
-    "tags/Nginx.md"
+    "_posts/2022-04-23-Docker-WordPress超过了站点的最大上传限制.md"
   ]
 }
